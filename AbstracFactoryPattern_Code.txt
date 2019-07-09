@@ -1,0 +1,18 @@
+﻿Step by step to Coding:
+Step 1. Create Interfaces with it's a class library , which contains three classes:
+ ICreditUnionFactory as an Abstract class , it have two method: CreateLoanAcct and CreatSavingsAcct
+-Interfaces for Products as Interface classes:
++ Product A: ILoanAccount
++ Product B: ISavingsAccount
+
+Step 2. Build Concrete Factory and Products :
+a. For Citi Credit Union: The classes implements for Interfaces and abstracts, which have defined at the step 1
+-CitiLoanAccount implement ILoanAccount
+-LoanSavingsAccount implement ISavingsAccount
+-CitiCreditUnionFactory inherit ICreditUnionFactory, and override availble defined methods 
+b. For Nation Credit Union: The classes implements for Interfaces and abstracts, which have defined at the step 1
+-NationLoanAccount implement ILoanAccount
+-NationSavingsAccount implement ISavingsAccount
+-NationCreditUnionFactory inherit ICreditUnionFactory, and override availble defined methods 
+
+Step 3: Write abstract factory provider and client code
